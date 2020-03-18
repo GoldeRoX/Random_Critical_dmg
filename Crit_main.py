@@ -2,7 +2,7 @@ import random
 import time
 
 
-print('Witaj w "Menu_Programowania", wpisz interesującą Cię kwestie ... Masz do wybrania: "Crit", :')
+print('Welcome to "Programming_Menu", enter the issues you are interested in ... You have to choose: "Crit",:')
 
 for i in range(3):
     time.sleep(0.5)
@@ -15,11 +15,11 @@ X = input()
 
 
 if X == 'Crit':
-    print("Wybierz procent ( liczba całkowita ) na pojawienie się Critica: ...")
+    print("Choose percentage (integer) for Critic to appear: ...")
     X = input()
     X = int(X)
 
-    print("Masz ",X,"% szansy na DMG Crit.")
+    print("You have ",X,"% chance forCrit. DMG")
 
 
     for i in range(3):
@@ -31,9 +31,9 @@ if X == 'Crit':
     losowanie = int(losowanie)
 
     if X >= losowanie:
-        print('Crit.! DMG twojego ataku zostanie zwiększony o 100%')
+        print("Crit.! Your attack's DMG will be increased by 100%")
     else:
-        print("zwykły DMG")
+        print("Normal DMG")
 else:
-    print('Nie ma tego czego szukasz!')
+    print('There is not what you are looking for')
 
